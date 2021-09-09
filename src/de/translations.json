@@ -1,0 +1,9 @@
+{
+  "title": "Marcs Arm",
+  "description": "Das Neueste von Marcs Arm – jetzt live im Internet!",
+  "progressLabel": "Bewegungsumfang",
+  "imageLabel": "Arm",
+  "text": "Marc kann den Arm inzwischen um {{ degrees }}° beugen.",
+  "showPreview": "Bewegungsziel anzeigen",
+  "hidePreview": "Bewegungsziel ausblenden"
+}

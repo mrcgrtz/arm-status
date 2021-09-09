@@ -1,0 +1,55 @@
+<!doctype html>
+<HtMl Lang={{ lang }}>
+<MeTa CharSet=utf-8>
+<MeTa Name=viewport Content="width=device-width,initial-scale=1">
+<MeTa Name=robots Content=noindex>
+<MeTa Name=twitter:card Content=summary_large_image>
+<MeTa Name=twitter:site Content=@dreamseer>
+<MeTa Name=twitter:url Property=og:url Content=https://arm.marcgoertz.de/>
+<MeTa Name=twitter:title Property=og:title Content="{{ title }}">
+<MeTa Name=twitter:description Property=og:description Content="{{ description }}">
+<MeTa Name=twitter:image Property=og:image Content=https://arm.marcgoertz.de/social.png>
+<LiNk Rel=icon Media=prefers-color-scheme:light Href=/favicon.ico>
+<LiNk Rel=icon Media=prefers-color-scheme:dark Href=/favicon-dark.ico>
+<TiTlE>{{ title }}</TiTlE>
+
+<StYlE>
+{% include "../_css/style.css" %}
+</StYlE>
+
+<DiV role=progressbar aria-valuemin={{ degreesMin }} aria-valuemax={{ degreesMax }} aria-valuenow={{ degrees }} aria-valuetext={{ value }} title="{{ progressLabel }}">
+	<SVG xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="370" height="593" viewBox="0 0 370 593" role="img" aria-label="{{ imageLabel }}">
+		<DEFS>
+			<PATH id="lower-arm" d="M12.785 285.096a44.346 44.346 0 01.239-5.513c2.555-24.098 24.157-41.57 48.258-39.02 24.096 2.546 41.574 24.151 39.024 48.252v.003h.001l-.013.112a46.724 46.724 0 01-.24 1.85c-1.002 7.415-5.211 35.512-16.515 78.432-13.302 50.504-29.145 91.79-30.714 120.978.035 1.042-.002 2.1-.114 3.167 2.718 16.905 33.284 29.563 41.576 40.358 8.281 10.788-.479 26.536-.479 26.536s1.709 14.926.286 23.241c-1.42 8.309-10.284 10.107-19.947 3.449-9.658-6.655-12.167 6.692-23.906 5.691-11.739-1.002-15.828-10.866-28.804-4.012-12.72 6.709-13.886-90.804-13.927-94.688a22.664 22.664 0 01-.191-2.657c-1.877-31.78 4.169-176.085 5.466-206.179z"/>
+		</DEFS>
+		<G opacity="0.2" transform="rotate(-150 58 285)" class="preview hidden">
+			<USE xlink:href="#lower-arm"/>
+		</G>
+		<PATH d="M135.084 65.033c-18.211 84.122-33.042 201.824-34.205 220.68l-87.77.004s.395-175.281 22.101-247.842l99.874 27.158z"/>
+		<PATH class="shirt" d="M78.952 236.624c9.14 1.464 18.24 3.218 27.386 4.629 0 0 16.716-120.654 28.744-176.217l-.02-.006c1.068-4.141 1.695-8.467 1.695-12.938 0-28.593-23.179-51.778-51.771-51.778-23.653 0-43.568 15.892-49.747 37.56h-.026C22.34 80.916 13.109 149.502 0 224.175c21.352 5.143 57.218 8.975 78.952 12.45"/>
+		<G>
+			<animateTransform attributeName="transform" type="rotate" values="{{ rotation }}" dur="10s" repeatCount="indefinite" fill="freeze"/>
+			<USE xlink:href="#lower-arm"/>
+		</G>
+		<G opacity="0.2" class="preview hidden">
+			<USE xlink:href="#lower-arm"/>
+		</G>
+	</SVG>
+</DiV>
+
+<MaIn>
+	<P>{{ text }}
+</MaIn>
+
+<ScRiPt>
+const toggle = document.createElement('BUTTON');
+toggle.type = 'button';
+toggle.textContent = '{{ showPreview }}';
+toggle.addEventListener('click', event => {
+for (const element of document.querySelectorAll('.preview')) {
+	element.classList.toggle('hidden');
+	event.target.textContent = element.classList.contains('hidden') ? '{{ showPreview }}' : '{{ hidePreview }}';
+}
+});
+document.querySelector('main').append(toggle);
+</ScRiPt>

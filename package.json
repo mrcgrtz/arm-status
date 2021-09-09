@@ -1,0 +1,65 @@
+{
+  "name": "arm-status",
+  "private": true,
+  "version": "1.0.0",
+  "description": "The latest news on Marc‘s arm – live from the Web!",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Dreamseer/arm-status.git"
+  },
+  "author": {
+    "name": "Marc Görtz",
+    "email": "git@marcgoertz.de",
+    "url": "https://marcgoertz.de/"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "scripts": {
+    "build": "npx eleventy",
+    "prepare": "husky install",
+    "start": "npx eleventy --serve",
+    "test": "xo && stylelint **/*.css"
+  },
+  "devDependencies": {
+    "clean-css": "^5.1.5",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^22.0.0",
+    "xo": "^0.44.0"
+  },
+  "lint-staged": {
+    "**/*.c?js": "xo --fix",
+    "**/*.css": "stylelint --fix"
+  },
+  "xo": {
+    "space": true,
+    "rules": {
+      "unicorn/prefer-module": "off"
+    }
+  },
+  "stylelint": {
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "at-rule-no-vendor-prefix": true,
+      "color-named": "never",
+      "font-family-name-quotes": "always-where-recommended",
+      "function-url-quotes": [
+        "always",
+        {
+          "except": [
+            "empty"
+          ]
+        }
+      ],
+      "indentation": 2,
+      "media-feature-name-no-vendor-prefix": true,
+      "no-descending-specificity": null,
+      "selector-attribute-quotes": "always",
+      "selector-no-vendor-prefix": true,
+      "string-quotes": "double"
+    }
+  }
+}

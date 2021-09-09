@@ -1,0 +1,9 @@
+{
+  "title": "Marc‘s Arm",
+  "description": "The latest news on Marc‘s arm – live from the Web!",
+  "progressLabel": "Range of motion",
+  "imageLabel": "Arm",
+  "text": "Marc can now move his arm by {{ degrees }}°.",
+  "showPreview": "Show movement goal",
+  "hidePreview": "Hide movement goal"
+}

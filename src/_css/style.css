@@ -1,0 +1,94 @@
+:root {
+  --foreground: hsl(27, 7%, 26%);
+  --background: hsl(30, 70%, 91%);
+  --shirt: hsl(241, 70%, 15%);
+  --skin-pinky: hsl(19, 92%, 81%);
+  --skin-fitzpatrick-1: hsl(33, 73%, 86%);
+  --skin-fitzpatrick-2: hsl(33, 73%, 86%);
+  --skin-fitzpatrick-3: hsl(32, 46%, 73%);
+  --skin-fitzpatrick-4: hsl(28, 34%, 58%);
+  --skin-fitzpatrick-5: hsl(26, 37%, 42%);
+  --skin-fitzpatrick-6: hsl(24, 19%, 28%);
+  --font: system-ui, "SF Pro Text", "SF Pro Icons", "Helvetica Neue", helvetica, arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground: hsl(71, 36%, 91%);
+    --background: hsl(28, 68%, 5%);
+    --shirt: hsl(12, 100%, 27%);
+  }
+}
+
+html {
+  font-family: var(--font);
+  line-height: 1.25;
+  color: var(--foreground);
+  background-color: var(--background);
+}
+
+body {
+  margin: 1rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+p {
+  margin: 1rem 0;
+  font-size: 1.375rem;
+  font-weight: bold;
+}
+
+button {
+  margin: 0;
+  padding: 0.5rem 1.75rem;
+  border: 0;
+  border-radius: 2rem;
+  font: inherit;
+  text-transform: uppercase;
+  color: var(--background);
+  background-color: var(--foreground);
+  cursor: pointer;
+}
+
+svg {
+  width: 100%;
+  min-width: calc(320px - 4rem);
+  height: auto;
+  max-height: 68vh;
+}
+
+path {
+  fill: var(--skin-pinky);
+}
+
+.shirt {
+  fill: var(--shirt);
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  body {
+    flex-wrap: nowrap;
+    text-align: left;
+  }
+
+  svg {
+    min-width: 30vw;
+  }
+
+  p {
+    margin: 2em 0 1em 2rem;
+    font-family: ui-rounded, var(--font);
+    font-size: 4.625vw;
+  }
+
+  button {
+    margin-left: 2rem;
+  }
+}

@@ -1,0 +1,27 @@
+AddDefaultCharset utf-8
+
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive on
+  ExpiresDefault                          "access plus 1 month"
+  ExpiresByType text/html                 "access plus 0 seconds"
+  ExpiresByType image/vnd.microsoft.icon  "access plus 1 year"
+  ExpiresByType image/x-icon              "access plus 1 year"
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header unset Expires
+</IfModule>
+
+<IfModule mod_mime.c>
+  AddType image/x-icon   cur ico
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+  RewriteCond %{HTTP:Accept-Language} (de) [NC]
+  RewriteRule ^index.html$ index.de.html [L]
+</IfModule>
