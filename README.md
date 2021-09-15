@@ -2,6 +2,11 @@
 
 > The latest news on Marc‘s arm – live from the Web!
 
+[![Test](https://github.com/Dreamseer/arm-status/actions/workflows/test.yml/badge.svg)](https://github.com/Dreamseer/arm-status/actions/workflows/test.yml)
+![Update Status](https://img.shields.io/david/dev/dreamseer/arm-status.svg)
+[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
+[![MIT license](https://img.shields.io/github/license/dreamseer/arm-status.svg)](https://github.com/Dreamseer/arm-status/blob/main/LICENSE.md)
+
 This is the source code of
 [arm.marcgoertz.de](https://arm.marcgoertz.de/), a ”progress
 indicator“ for my arm‘s recovery. It is build with
