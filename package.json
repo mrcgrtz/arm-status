@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
-    "clean-css": "^5.2.1",
+    "clean-css": "^5.2.2",
     "husky": "^7.0.4",
     "lint-staged": "^11.2.3",
     "stylelint": "^13.13.1",
