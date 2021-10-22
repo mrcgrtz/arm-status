@@ -1,22 +1,22 @@
 :root {
-  --foreground: hsl(27, 7%, 26%);
-  --background: hsl(30, 70%, 91%);
-  --shirt: hsl(241, 70%, 15%);
-  --skin-pinky: hsl(19, 92%, 81%);
-  --skin-fitzpatrick-1: hsl(33, 73%, 86%);
-  --skin-fitzpatrick-2: hsl(33, 73%, 86%);
-  --skin-fitzpatrick-3: hsl(32, 46%, 73%);
-  --skin-fitzpatrick-4: hsl(28, 34%, 58%);
-  --skin-fitzpatrick-5: hsl(26, 37%, 42%);
-  --skin-fitzpatrick-6: hsl(24, 19%, 28%);
+  --foreground: hsl(27deg 7% 26%);
+  --background: hsl(30deg 70% 91%);
+  --shirt: hsl(241deg 70% 15%);
+  --skin-pinky: hsl(19deg 92% 81%);
+  --skin-fitzpatrick-1: hsl(33deg 73% 86%);
+  --skin-fitzpatrick-2: hsl(33deg 73% 86%);
+  --skin-fitzpatrick-3: hsl(32deg 46% 73%);
+  --skin-fitzpatrick-4: hsl(28deg 34% 58%);
+  --skin-fitzpatrick-5: hsl(26deg 37% 42%);
+  --skin-fitzpatrick-6: hsl(24deg 19% 28%);
   --font: system-ui, "SF Pro Text", "SF Pro Icons", "Helvetica Neue", helvetica, arial, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground: hsl(71, 36%, 91%);
-    --background: hsl(28, 68%, 5%);
-    --shirt: hsl(12, 100%, 27%);
+    --foreground: hsl(71deg 36% 91%);
+    --background: hsl(28deg 68% 5%);
+    --shirt: hsl(12deg 100% 27%);
   }
 }
 
