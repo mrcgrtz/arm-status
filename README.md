@@ -3,7 +3,7 @@
 > The latest news on Marc‘s arm – live from the Web!
 
 [![Test](https://github.com/Dreamseer/arm-status/actions/workflows/test.yml/badge.svg)](https://github.com/Dreamseer/arm-status/actions/workflows/test.yml)
-![Update Status](https://img.shields.io/david/dev/dreamseer/arm-status.svg)
+![Built with Eleventy](https://img.shields.io/badge/Built%20with-11ty-blueviolet)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
 [![MIT license](https://img.shields.io/github/license/dreamseer/arm-status.svg)](https://github.com/Dreamseer/arm-status/blob/main/LICENSE.md)
 
