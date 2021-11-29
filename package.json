@@ -29,7 +29,7 @@
     "lint-staged": "^12.1.2",
     "stylelint": "^14.1.0",
     "stylelint-config-standard": "^24.0.0",
-    "xo": "^0.46.4"
+    "xo": "^0.47.0"
   },
   "lint-staged": {
     "**/*.c?js": "xo --fix",
