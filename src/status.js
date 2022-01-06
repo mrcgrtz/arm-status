@@ -1,3 +1,3 @@
-const status = '0-30-90';
+const status = '0-20-100';
 
 module.exports = status;
