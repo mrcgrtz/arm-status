@@ -4,6 +4,5 @@
   "progressLabel": "Bewegungsumfang",
   "imageLabel": "Arm",
   "text": "Marc kann den Arm inzwischen um {{ degrees }}° beugen.",
-  "showPreview": "Bewegungsziel anzeigen",
-  "hidePreview": "Bewegungsziel ausblenden"
+  "showPreview": "Bewegungsziel anzeigen"
 }
