@@ -8,7 +8,7 @@ class Main {
   get data() {
     if (this.language) {
       const translations = require(`./${this.language}/translations.json`);
-      const [extension, normal, flexion] = this.status.split('-').map(i => Number(i));
+      const [extension, normal, flexion] = this.status.split('-').map(Number);
       const degrees = extension + flexion - normal;
       const text = translations.text.replace('{{ degrees }}', degrees);
       const rotation = [extension + normal, flexion, extension + normal]
