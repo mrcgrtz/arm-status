@@ -8,7 +8,7 @@
 [![MIT license](https://img.shields.io/github/license/mrcgrtz/arm-status.svg)](https://github.com/mrcgrtz/arm-status/blob/main/LICENSE.md)
 
 This is the source code of
-[arm.marcgoertz.de](https://arm.marcgoertz.de/), a ”progress
+[arm-status](https://mrcgrtz.github.io/arm-status/), a ”progress
 indicator“ for my arm‘s recovery. It is build with
 [Eleventy](https://www.11ty.dev/).
 
