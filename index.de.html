@@ -1,0 +1,195 @@
+<!doctype html>
+<HTML Lang=de>
+<META charSet=utf-8>
+<META name=viewport content="width=device-width,initial-scale=1">
+<META name=robots content=noindex>
+<META name=twitter:card content=summary_large_image>
+<META name=twitter:site content=@mrcgrtz>
+<META name=twitter:url property=og:url content=https://arm.marcgoertz.de/>
+<META name=twitter:title property=og:title content="Marcs Arm">
+<META name=twitter:description property=og:description content="Das Neueste von Marcs Arm – jetzt live im Internet!">
+<META name=twitter:image property=og:image content=https://arm.marcgoertz.de/social.png>
+<LINK rel=icon media=prefers-color-scheme:light href=/favicon.ico>
+<LINK rel=icon media=prefers-color-scheme:dark href=/favicon-dark.ico>
+<TITLE>Marcs Arm</TITLE>
+
+<STYLE>
+:root {
+  --foreground: hsl(27deg 7% 26%);
+  --background: hsl(30deg 70% 91%);
+  --shirt: hsl(241deg 70% 15%);
+  --skin-pinky: hsl(19deg 92% 81%);
+  --skin-fitzpatrick-1: hsl(33deg 73% 86%);
+  --skin-fitzpatrick-2: hsl(33deg 73% 86%);
+  --skin-fitzpatrick-3: hsl(32deg 46% 73%);
+  --skin-fitzpatrick-4: hsl(28deg 34% 58%);
+  --skin-fitzpatrick-5: hsl(26deg 37% 42%);
+  --skin-fitzpatrick-6: hsl(24deg 19% 28%);
+  --font: system-ui, "SF Pro Text", "SF Pro Icons", "Helvetica Neue", helvetica, arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground: hsl(71deg 36% 91%);
+    --background: hsl(28deg 68% 5%);
+    --shirt: hsl(12deg 100% 27%);
+  }
+}
+
+html {
+  font-family: var(--font);
+  line-height: 1.25;
+  color: var(--foreground);
+  background-color: var(--background);
+}
+
+body {
+  margin: 1rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+p {
+  margin: 1rem 0;
+  font-size: 1.375rem;
+  font-weight: bold;
+}
+
+button {
+  position: relative;
+  margin: 0;
+  padding: 0 0 0 3rem;
+  border: 0;
+  border-radius: 0;
+  font: inherit;
+  line-height: 1.5;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 1rem;
+  width: 2.5rem;
+  height: 1.5rem;
+  color: var(--background);
+  background-color: var(--foreground);
+}
+
+button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0.25rem;
+  border-radius: 100%;
+  width: 1rem;
+  height: 1rem;
+  color: var(--foreground);
+  background-color: var(--background);
+  transition: transform 0.2s ease-out;
+}
+
+button[aria-pressed="true"]::after {
+  transform: translateX(1rem);
+}
+
+@media (prefers-color-scheme: dark) {
+  button::before {
+    border: 2px solid var(--foreground);
+    background-color: transparent;
+    box-sizing: border-box;
+  }
+
+  button::after {
+    color: var(--background);
+    background-color: var(--foreground);
+  }
+}
+
+svg {
+  width: 100%;
+  min-width: calc(320px - 4rem);
+  height: auto;
+  max-height: 68vh;
+}
+
+path {
+  fill: var(--skin-pinky);
+}
+
+.shirt {
+  fill: var(--shirt);
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  body {
+    flex-wrap: nowrap;
+    text-align: left;
+  }
+
+  svg {
+    min-width: 30vw;
+  }
+
+  p {
+    margin: 2em 0 1em 2rem;
+    font-family: ui-rounded, var(--font);
+    font-size: 4.625vw;
+  }
+
+  button {
+    margin-left: 2rem;
+  }
+}
+
+</STYLE>
+
+<DIV role=progressbar aria-valuemin=0 aria-valuemax=150 aria-valuenow=80 aria-valuetext=0-20-100 title="Bewegungsumfang">
+  <SVG xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="370" height="593" viewBox="0 0 370 593" role="img" aria-label="Arm">
+    <DEFS>
+      <PATH id="lower-arm" d="M12.785 285.096a44.346 44.346 0 01.239-5.513c2.555-24.098 24.157-41.57 48.258-39.02 24.096 2.546 41.574 24.151 39.024 48.252v.003h.001l-.013.112a46.724 46.724 0 01-.24 1.85c-1.002 7.415-5.211 35.512-16.515 78.432-13.302 50.504-29.145 91.79-30.714 120.978.035 1.042-.002 2.1-.114 3.167 2.718 16.905 33.284 29.563 41.576 40.358 8.281 10.788-.479 26.536-.479 26.536s1.709 14.926.286 23.241c-1.42 8.309-10.284 10.107-19.947 3.449-9.658-6.655-12.167 6.692-23.906 5.691-11.739-1.002-15.828-10.866-28.804-4.012-12.72 6.709-13.886-90.804-13.927-94.688a22.664 22.664 0 01-.191-2.657c-1.877-31.78 4.169-176.085 5.466-206.179z"/>
+    </DEFS>
+    <G opacity="0.2" transform="rotate(-150 58 285)" class="preview hidden">
+      <USE xlink:href="#lower-arm"/>
+    </G>
+    <PATH d="M135.084 65.033c-18.211 84.122-33.042 201.824-34.205 220.68l-87.77.004s.395-175.281 22.101-247.842l99.874 27.158z"/>
+    <PATH class="shirt" d="M78.952 236.624c9.14 1.464 18.24 3.218 27.386 4.629 0 0 16.716-120.654 28.744-176.217l-.02-.006c1.068-4.141 1.695-8.467 1.695-12.938 0-28.593-23.179-51.778-51.771-51.778-23.653 0-43.568 15.892-49.747 37.56h-.026C22.34 80.916 13.109 149.502 0 224.175c21.352 5.143 57.218 8.975 78.952 12.45"/>
+    <G>
+      <animateTransform attributeName="transform" type="rotate" values="-20 55.666666666666664 285;-20 55.666666666666664 285;-100 58.333333333333336 285;-100 58.333333333333336 285;-20 55.666666666666664 285;-20 55.666666666666664 285" dur="10s" repeatCount="indefinite" fill="freeze"/>
+      <USE xlink:href="#lower-arm"/>
+    </G>
+    <G opacity="0.2" class="preview hidden">
+      <USE xlink:href="#lower-arm"/>
+    </G>
+  </SVG>
+</DIV>
+
+<MAIN>
+	<P>Marc kann den Arm inzwischen um 80° beugen.
+</MAIN>
+
+<SCRIPT>
+const toggle = document.createElement('BUTTON');
+toggle.type = 'button';
+toggle.textContent = 'Bewegungsziel anzeigen';
+toggle.setAttribute('aria-pressed', 'false');
+toggle.addEventListener('click', event => {
+  for (const element of document.querySelectorAll('.preview')) {
+    element.classList.toggle('hidden');
+  }
+  const isPressed = event.target.getAttribute('aria-pressed') === 'true';
+  event.target.setAttribute('aria-pressed', isPressed ? 'false' : 'true');
+});
+document.querySelector('main').append(toggle);
+</SCRIPT>
