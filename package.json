@@ -24,7 +24,7 @@
     "clean-css": "^5.3.1",
     "husky": "^8.0.2",
     "lint-staged": "^13.1.0",
-    "stylelint": "^14.16.0",
+    "stylelint": "^14.16.1",
     "stylelint-config-standard": "^29.0.0",
     "xo": "^0.53.1"
   },
