@@ -22,7 +22,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2",
     "clean-css": "^5.3.1",
-    "husky": "^8.0.2",
+    "husky": "^8.0.3",
     "lint-staged": "^13.1.0",
     "stylelint": "^14.16.1",
     "stylelint-config-standard": "^29.0.0",
