@@ -1,6 +1,7 @@
-module.exports = function(eleventyConfig) {
+/** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
+module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
-    'src/_static': '.'
+    'src/_static': '.',
   });
   return {
     dir: {

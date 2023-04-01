@@ -1,6 +1,7 @@
 {
   "recommendations": [
     "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
     "ronnidc.nunjucks",
     "samverschueren.linter-xo",
     "stylelint.vscode-stylelint"

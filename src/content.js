@@ -12,8 +12,8 @@ class Main {
       const degrees = extension + flexion - normal;
       const text = translations.text.replace('{{ degrees }}', degrees);
       const rotation = [extension + normal, flexion, extension + normal]
-        .map(i => `-${i} ${55 + (i / 30)} 285`)
-        .flatMap(i => ([i, i]))
+        .map((direction) => `-${direction} ${55 + direction / 30} 285`)
+        .flatMap((item) => [item, item])
         .join(';');
       return {
         ...translations,
@@ -25,7 +25,8 @@ class Main {
         degrees,
         degreesMin: 0,
         degreesMax: 150,
-        permalink: data => `/index${data.lang === 'en' ? '' : '.' + data.lang}.html`,
+        permalink: (data) =>
+          `/index${data.lang === 'en' ? '' : '.' + data.lang}.html`,
       };
     }
 

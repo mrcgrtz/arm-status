@@ -9,7 +9,8 @@
   --skin-fitzpatrick-4: hsl(28deg 34% 58%);
   --skin-fitzpatrick-5: hsl(26deg 37% 42%);
   --skin-fitzpatrick-6: hsl(24deg 19% 28%);
-  --font: system-ui, "SF Pro Text", "SF Pro Icons", "Helvetica Neue", helvetica, arial, sans-serif;
+  --font: system-ui, 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', helvetica,
+    arial, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -55,7 +56,7 @@ button {
 }
 
 button::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -67,7 +68,7 @@ button::before {
 }
 
 button::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -80,7 +81,7 @@ button::after {
   transition: transform 0.2s ease-out;
 }
 
-button[aria-pressed="true"]::after {
+button[aria-pressed='true']::after {
   transform: translateX(1rem);
 }
 
