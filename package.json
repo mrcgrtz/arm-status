@@ -31,11 +31,5 @@
   "lint-staged": {
     "**/*.c?js": "xo --fix",
     "**/*.css": "stylelint --fix"
-  },
-  "xo": {
-    "space": true,
-    "rules": {
-      "unicorn/prefer-module": "off"
-    }
   }
 }
