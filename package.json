@@ -27,9 +27,5 @@
     "stylelint": "^15.4.0",
     "stylelint-config-standard": "^32.0.0",
     "xo": "^0.53.1"
-  },
-  "lint-staged": {
-    "**/*.c?js": "xo --fix",
-    "**/*.css": "stylelint --fix"
   }
 }
