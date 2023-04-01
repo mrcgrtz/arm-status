@@ -20,7 +20,7 @@
     "test": "xo && stylelint **/*.css"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.0",
+    "@11ty/eleventy": "^2.0.1",
     "clean-css": "^5.3.2",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.2",
