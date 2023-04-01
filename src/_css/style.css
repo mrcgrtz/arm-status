@@ -116,7 +116,7 @@ path {
   display: none;
 }
 
-@media (min-width: 800px) {
+@media (width >= 800px) {
   body {
     flex-wrap: nowrap;
     text-align: left;
