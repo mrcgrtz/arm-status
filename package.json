@@ -28,6 +28,6 @@
     "prettier": "^2.8.8",
     "stylelint": "^15.10.2",
     "stylelint-config-standard": "^34.0.0",
-    "xo": "^0.54.2"
+    "xo": "^0.55.0"
   }
 }
