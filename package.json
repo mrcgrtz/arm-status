@@ -16,14 +16,14 @@
   "scripts": {
     "build": "npx eleventy",
     "format": "prettier --write .",
-    "prepare": "husky install",
+    "prepare": "husky",
     "start": "npx eleventy --serve",
     "test": "xo && stylelint **/*.css"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "clean-css": "^5.3.3",
-    "husky": "^8.0.3",
+    "husky": "^9.0.7",
     "lint-staged": "^15.2.1",
     "prettier": "^3.2.4",
     "stylelint": "^16.2.0",
