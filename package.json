@@ -16,7 +16,7 @@
   "scripts": {
     "build": "npx eleventy",
     "format": "prettier --write .",
-    "prepare": "husky install",
+    "prepare": "husky",
     "start": "npx eleventy --serve",
     "test": "xo && stylelint **/*.css"
   },
