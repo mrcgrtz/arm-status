@@ -1,4 +1,7 @@
-const status = require('./status.js');
+import {createRequire} from 'node:module';
+import status from './status.js';
+
+const require = createRequire(import.meta.url);
 
 class Main {
   constructor() {
@@ -38,4 +41,4 @@ class Main {
   }
 }
 
-module.exports = Main;
+export default Main;

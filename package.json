@@ -11,8 +11,9 @@
     "url": "https://marcgoertz.de/"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
+  "type": "module",
   "scripts": {
     "build": "npx eleventy",
     "format": "prettier --write .",
@@ -21,7 +22,7 @@
     "test": "xo && stylelint **/*.css"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy": "^3.0.0",
     "clean-css": "^5.3.3",
     "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
