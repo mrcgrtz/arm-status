@@ -1,5 +1,5 @@
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     'src/_static': '.',
   });
@@ -10,4 +10,4 @@ module.exports = function (eleventyConfig) {
       layouts: '_layouts',
     },
   };
-};
+}

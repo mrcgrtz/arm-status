@@ -1,4 +1,4 @@
-const Content = require('../content.js');
+import Content from '../content.js';
 
 class EnglishContent extends Content {
   constructor() {
@@ -7,4 +7,4 @@ class EnglishContent extends Content {
   }
 }
 
-module.exports = EnglishContent;
+export default EnglishContent;

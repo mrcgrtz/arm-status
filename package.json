@@ -11,8 +11,9 @@
     "url": "https://marcgoertz.de/"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
+  "type": "module",
   "scripts": {
     "build": "npx eleventy",
     "format": "prettier --write .",
