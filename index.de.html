@@ -15,143 +15,144 @@
 
 <STYLE>
 :root {
-  --foreground: hsl(27deg 7% 26%);
-  --background: hsl(30deg 70% 91%);
-  --shirt: hsl(241deg 70% 15%);
-  --skin-pinky: hsl(19deg 92% 81%);
-  --skin-fitzpatrick-1: hsl(33deg 73% 86%);
-  --skin-fitzpatrick-2: hsl(33deg 73% 86%);
-  --skin-fitzpatrick-3: hsl(32deg 46% 73%);
-  --skin-fitzpatrick-4: hsl(28deg 34% 58%);
-  --skin-fitzpatrick-5: hsl(26deg 37% 42%);
-  --skin-fitzpatrick-6: hsl(24deg 19% 28%);
-  --font: system-ui, 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', helvetica,
-    arial, sans-serif;
+	--foreground: hsl(27deg 7% 26%);
+	--background: hsl(30deg 70% 91%);
+	--shirt: hsl(241deg 70% 15%);
+	--skin-pinky: hsl(19deg 92% 81%);
+	--skin-fitzpatrick-1: hsl(33deg 73% 86%);
+	--skin-fitzpatrick-2: hsl(33deg 73% 86%);
+	--skin-fitzpatrick-3: hsl(32deg 46% 73%);
+	--skin-fitzpatrick-4: hsl(28deg 34% 58%);
+	--skin-fitzpatrick-5: hsl(26deg 37% 42%);
+	--skin-fitzpatrick-6: hsl(24deg 19% 28%);
+	--font:
+		system-ui, 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', helvetica,
+		arial, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground: hsl(71deg 36% 91%);
-    --background: hsl(28deg 68% 5%);
-    --shirt: hsl(12deg 100% 27%);
-  }
+	:root {
+		--foreground: hsl(71deg 36% 91%);
+		--background: hsl(28deg 68% 5%);
+		--shirt: hsl(12deg 100% 27%);
+	}
 }
 
 html {
-  font-family: var(--font);
-  line-height: 1.25;
-  color: var(--foreground);
-  background-color: var(--background);
+	font-family: var(--font);
+	line-height: 1.25;
+	color: var(--foreground);
+	background-color: var(--background);
 }
 
 body {
-  margin: 1rem 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
+	margin: 1rem 2rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
 }
 
 p {
-  margin: 1rem 0;
-  font-size: 1.375rem;
-  font-weight: bold;
+	margin: 1rem 0;
+	font-size: 1.375rem;
+	font-weight: bold;
 }
 
 button {
-  position: relative;
-  margin: 0;
-  padding: 0 0 0 3rem;
-  border: 0;
-  border-radius: 0;
-  font: inherit;
-  line-height: 1.5;
-  color: inherit;
-  background: none;
-  cursor: pointer;
+	position: relative;
+	margin: 0;
+	padding: 0 0 0 3rem;
+	border: 0;
+	border-radius: 0;
+	font: inherit;
+	line-height: 1.5;
+	color: inherit;
+	background: none;
+	cursor: pointer;
 }
 
 button::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 1rem;
-  width: 2.5rem;
-  height: 1.5rem;
-  color: var(--background);
-  background-color: var(--foreground);
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 1rem;
+	width: 2.5rem;
+	height: 1.5rem;
+	color: var(--background);
+	background-color: var(--foreground);
 }
 
 button::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0.25rem;
-  border-radius: 100%;
-  width: 1rem;
-  height: 1rem;
-  color: var(--foreground);
-  background-color: var(--background);
-  transition: transform 0.2s ease-out;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0.25rem;
+	border-radius: 100%;
+	width: 1rem;
+	height: 1rem;
+	color: var(--foreground);
+	background-color: var(--background);
+	transition: transform 0.2s ease-out;
 }
 
 button[aria-pressed='true']::after {
-  transform: translateX(1rem);
+	transform: translateX(1rem);
 }
 
 @media (prefers-color-scheme: dark) {
-  button::before {
-    border: 2px solid var(--foreground);
-    background-color: transparent;
-    box-sizing: border-box;
-  }
+	button::before {
+		border: 2px solid var(--foreground);
+		background-color: transparent;
+		box-sizing: border-box;
+	}
 
-  button::after {
-    color: var(--background);
-    background-color: var(--foreground);
-  }
+	button::after {
+		color: var(--background);
+		background-color: var(--foreground);
+	}
 }
 
 svg {
-  width: 100%;
-  min-width: calc(320px - 4rem);
-  height: auto;
-  max-height: 68vh;
+	width: 100%;
+	min-width: calc(320px - 4rem);
+	height: auto;
+	max-height: 68vh;
 }
 
 path {
-  fill: var(--skin-pinky);
+	fill: var(--skin-pinky);
 }
 
 .shirt {
-  fill: var(--shirt);
+	fill: var(--shirt);
 }
 
 .hidden {
-  display: none;
+	display: none;
 }
 
 @media (width >= 800px) {
-  body {
-    flex-wrap: nowrap;
-    text-align: left;
-  }
+	body {
+		flex-wrap: nowrap;
+		text-align: left;
+	}
 
-  svg {
-    min-width: 30vw;
-  }
+	svg {
+		min-width: 30vw;
+	}
 
-  p {
-    margin: 2em 0 1em 2rem;
-    font-family: ui-rounded, var(--font);
-    font-size: 4.625vw;
-  }
+	p {
+		margin: 2em 0 1em 2rem;
+		font-family: ui-rounded, var(--font);
+		font-size: 4.625vw;
+	}
 
-  button {
-    margin-left: 2rem;
-  }
+	button {
+		margin-left: 2rem;
+	}
 }
 
 </STYLE>
