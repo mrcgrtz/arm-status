@@ -10,9 +10,10 @@ root = true
 # # ALL FILES                                                          #
 # ######################################################################
 [*]
-# indent using spaces
-indent_style = space
-indent_size = 2
+# indent using tabs
+indent_style = tab
+indent_size = tab
+tab_width = 4
 # Unix-style newlines with a newline ending every file
 end_of_line = lf
 insert_final_newline = true
@@ -28,3 +29,9 @@ trim_trailing_whitespace = true
 # do not remove trailing spaces for line-breaks
 trim_trailing_whitespace = false
 
+# ######################################################################
+# # PACKAGE FILES                                                      #
+# ######################################################################
+[package.json]
+indent_style = space
+indent_size = 2

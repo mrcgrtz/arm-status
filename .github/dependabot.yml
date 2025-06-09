@@ -1,17 +1,17 @@
 version: 2
 updates:
-  # Maintain dependencies for Node
-  - package-ecosystem: 'npm'
-    directory: '/'
-    schedule:
-      interval: 'monthly'
-    assignees:
-      - 'mrcgrtz'
+    # Maintain dependencies for Node
+    - package-ecosystem: 'npm'
+      directory: '/'
+      schedule:
+          interval: 'monthly'
+      assignees:
+          - 'mrcgrtz'
 
-  # Check for updates to GitHub Actions
-  - package-ecosystem: 'github-actions'
-    directory: '/'
-    schedule:
-      interval: 'monthly'
-    assignees:
-      - 'mrcgrtz'
+    # Check for updates to GitHub Actions
+    - package-ecosystem: 'github-actions'
+      directory: '/'
+      schedule:
+          interval: 'monthly'
+      assignees:
+          - 'mrcgrtz'
